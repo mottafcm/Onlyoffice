@@ -9,6 +9,7 @@ mkdir -p /app/onlyoffice/DocumentServer/data/certs && \
 openssl genrsa -out /app/onlyoffice/DocumentServer/data/certs/tls.key 2048 && \
 openssl req -new -key /app/onlyoffice/DocumentServer/data/certs/tls.key -out /app/onlyoffice/DocumentServer/data/certs/tls.csr && \
 openssl x509 -req -days 3650 -in /app/onlyoffice/DocumentServer/data/certs/tls.csr -signkey /app/onlyoffice/DocumentServer/data/certs/tls.key -out /app/onlyoffice/DocumentServer/data/certs/tls.crt
+openssl dhparam -out /app/onlyoffice/DocumentServer/data/certs/dhparam.pem 2048
 ```
 ### Para executar o ONLYOFFICE Document Server usando Docker, utilize o seguinte comando:
 
