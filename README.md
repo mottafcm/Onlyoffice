@@ -2,7 +2,9 @@
 
 ## Download da imagem ONLYOFFICE
 
+```bash
 docker pull ghcr.io/mottafcm/onlyoffice/onlyoffice-ilimitado:latest
+```
 
 ## Executando o ONLYOFFICE Document Server
 
